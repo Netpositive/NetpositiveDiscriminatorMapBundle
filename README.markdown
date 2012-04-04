@@ -11,8 +11,19 @@ Example configuration (config.yml):
                         phonebook_entry: University\CmsBundle\Entity\Content\PhonebookEntry
 
 
-parent class: Netpositive\CmsBundle\Entity\Content
-parent table name: content
+parent class:
 
-children classes: University\CmsBundle\Entity\Content\Course, University\CmsBundle\Entity\Content\PhonebookEntry
-children table names: course, phonebook_entry
+* Netpositive\CmsBundle\Entity\Content
+
+parent table name:
+
+* content
+
+children classes:
+
+* University\CmsBundle\Entity\Content\Course
+* University\CmsBundle\Entity\Content\PhonebookEntry
+
+children table names:
+* course
+* phonebook_entry
