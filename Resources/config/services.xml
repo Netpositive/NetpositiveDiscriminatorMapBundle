@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <parameters>
+        <parameter key="netpositive_discriminator_map.class">Netpositive\DiscriminatorMapBundle\EventListener\DiscriminatorMapListener</parameter>
+        <parameter key="netpositive_discriminator_map.discriminator_map" />
+    </parameters>
+
+    <services>
+        <service id="netpositive_discriminator_map" class="%netpositive_discriminator_map.class%">
+            <argument>%netpositive_discriminator_map.discriminator_map%</argument>
+        </service>
+    </services>
+</container>
