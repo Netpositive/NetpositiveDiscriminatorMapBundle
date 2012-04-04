@@ -25,5 +25,6 @@ children classes:
 * University\CmsBundle\Entity\Content\PhonebookEntry
 
 children table names:
+
 * course
 * phonebook_entry
