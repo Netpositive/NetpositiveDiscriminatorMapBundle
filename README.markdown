@@ -84,6 +84,7 @@ This bundle was intended to extend an existing DiscriminatorMap (comes from any 
 ## Note
 
 Unfortunately it doesn't work as intended due to a doctrine bug: [http://www.doctrine-project.org/jira/browse/DDC-1763](http://www.doctrine-project.org/jira/browse/DDC-1763)
+There is a workaround until this bug fixed: you have to configure all the DiscriminatorMap values in config file, the parent class @ORM\DiscriminatorMap should be empty or omited.
 
 We already fixed this and opened pull requests:
 
