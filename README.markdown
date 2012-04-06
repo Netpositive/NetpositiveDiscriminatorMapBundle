@@ -7,7 +7,7 @@ This bundle was intended to extend an existing DiscriminatorMap (comes from any 
 ### Add to the deps file
 
     [NetpositiveDiscriminatorMapBundle]
-        git=https://burci@github.com/Netpositive/NetpositiveDiscriminatorMapBundle.git
+        git=git://github.com/Netpositive/NetpositiveDiscriminatorMapBundle.git
         target=bundles/Netpositive/DiscriminatorMapBundle
 
 ### Register the namespace in your autoload.php
