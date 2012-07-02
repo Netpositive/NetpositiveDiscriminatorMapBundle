@@ -8,6 +8,7 @@ This bundle was intended to extend an existing DiscriminatorMap (comes from any 
 
 #### 1.1 Add netpositive/discriminatormapbundle to your composer.json
 
+    // composer.json
     {
     "require": {
         ...
