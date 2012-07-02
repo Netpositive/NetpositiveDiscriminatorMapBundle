@@ -1,0 +1,19 @@
+{
+    "name":         "Netpositive/DiscriminatorMapBundle",
+    "description":  "Dynamic DiscriminatorMap extender for Symfony2 with Doctrine ORM 2",
+    "type":         "symfony-bundle",
+    "keywords":     ["discriminator", "map", "single table inheritance"],
+    "license":      "MIT",
+    "authors":      [
+        {
+            "name":     "Netpositive Kft.",
+            "homepage": "http://netpositive.hu"
+        }
+    ],
+    "require": {
+    },
+    "autoload":     {
+        "psr-0": { "Netpositive\\DiscriminatorMapBundle": "" }
+    },
+    "target-dir": "Netpositive/DiscriminatorMapBundle"
+}
