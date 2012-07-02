@@ -4,20 +4,16 @@ This bundle was intended to extend an existing DiscriminatorMap (comes from any 
 
 ## Installation
 
-### Add to the deps file
+### 1, Using composer
 
-    [NetpositiveDiscriminatorMapBundle]
-        git=git://github.com/Netpositive/NetpositiveDiscriminatorMapBundle.git
-        target=bundles/Netpositive/DiscriminatorMapBundle
+#### 1.1 Add netpositive/discriminatormapbundle to your composer.json
 
-### Register the namespace in your autoload.php
-
-    // app/autoload.php
-    $loader->registerNamespaces(array(
+    {
+    "require": {
         ...
-        'Netpositive'      => __DIR__.'/../vendor/bundles',
+        "netpositive/discriminatormapbundle": "*"
 
-### Enable it at your kernel
+#### 1.2 Enable it at your kernel
 
     // app/AppKernel.php
     class AppKernel extends Kernel
@@ -27,7 +23,33 @@ This bundle was intended to extend an existing DiscriminatorMap (comes from any 
             $bundles = array(
                 ...
                 new Netpositive\DiscriminatorMapBundle\NetpositiveDiscriminatorMapBundle(),
-        
+
+### 2, Using vendors
+
+#### 2.1 Add to the deps file
+
+    [NetpositiveDiscriminatorMapBundle]
+        git=git://github.com/Netpositive/NetpositiveDiscriminatorMapBundle.git
+        target=bundles/Netpositive/DiscriminatorMapBundle
+
+#### 2.2 Register the namespace in your autoload.php
+
+    // app/autoload.php
+    $loader->registerNamespaces(array(
+        ...
+        'Netpositive'      => __DIR__.'/../vendor/bundles',
+
+#### 2.3 Enable it at your kernel
+
+    // app/AppKernel.php
+    class AppKernel extends Kernel
+    {
+        public function registerBundles()
+        {
+            $bundles = array(
+                ...
+                new Netpositive\DiscriminatorMapBundle\NetpositiveDiscriminatorMapBundle(),
+
 ## Configuration
 
     # app/config/config.yml

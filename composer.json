@@ -11,7 +11,12 @@
             "homepage": "http://netpositive.hu"
         }
     ],
-    "require": {
+    "require":     {
+        "php":                      ">=5.3.1",
+        "symfony/framework-bundle": "2.*"
+    },
+    "suggest":     {
+        "doctrine/doctrine-bundle":    "*"
     },
     "autoload":     {
         "psr-0": { "Netpositive\\DiscriminatorMapBundle": "" }
