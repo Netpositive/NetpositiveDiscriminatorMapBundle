@@ -32,7 +32,7 @@ class DiscriminatorMapListener
         $metadata = $eventArgs->getClassMetadata();
         $class = $metadata->getReflectionClass();
         
-        if ($class === NULL) {
+        if ($class === null) {
             $class = new \ReflectionClass($metadata->getName());
         }
         
