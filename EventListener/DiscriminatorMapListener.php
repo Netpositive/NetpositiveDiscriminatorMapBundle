@@ -31,7 +31,11 @@ class DiscriminatorMapListener
     {
         $metadata = $eventArgs->getClassMetadata();
         $class = $metadata->getReflectionClass();
-
+        
+        if ($class === null) {
+            $class = new \ReflectionClass($metadata->getName());
+        }
+        
         foreach ($this->discrminatorMap as $table => $config) {
             if ($class->getName() == $config['entity']) {
                 $reader = new AnnotationReader;
