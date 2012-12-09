@@ -1,5 +1,5 @@
 {
-    "name":         "netpositive/discriminatormapbundle",
+    "name":         "netpositive/discriminatormap-bundle",
     "description":  "Dynamic DiscriminatorMap extender for Symfony2 with Doctrine ORM 2",
     "type":         "symfony-bundle",
     "keywords":     ["doctrine", "discriminator map", "single table inheritance"],
