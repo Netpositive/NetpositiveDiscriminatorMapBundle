@@ -12,7 +12,7 @@ This bundle was intended to extend an existing DiscriminatorMap (comes from any 
     {
     "require": {
         ...
-        "netpositive/discriminatormapbundle": "*"
+        "netpositive/discriminatormap-bundle": "dev-master"
 
 #### 1.2 Enable it at your kernel
 
