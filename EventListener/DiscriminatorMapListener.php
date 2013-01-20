@@ -14,7 +14,7 @@ class DiscriminatorMapListener
 
     /**
      * Constructor
-     * 
+     *
      * @param array $discriminatorMap
      */
     public function __construct($discriminatorMap)
@@ -24,18 +24,18 @@ class DiscriminatorMapListener
 
     /**
      * Sets the discrimantor map according to the config
-     * 
+     *
      * @param LoadClassMetadataEventArgs $eventArgs
      */
     public function loadClassMetadata(LoadClassMetadataEventArgs $eventArgs)
     {
         $metadata = $eventArgs->getClassMetadata();
         $class = $metadata->getReflectionClass();
-        
+
         if ($class === null) {
             $class = new \ReflectionClass($metadata->getName());
         }
-        
+
         foreach ($this->discrminatorMap as $table => $config) {
             if ($class->getName() == $config['entity']) {
                 $reader = new AnnotationReader;
