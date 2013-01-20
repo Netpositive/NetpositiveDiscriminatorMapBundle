@@ -6,11 +6,11 @@ use Doctrine\Common\Annotations\AnnotationReader;
 
 /**
  * Listens to loadClassMetadata event and sets
- * the discrimantor map if needed
+ * the discriminator map if needed
  */
 class DiscriminatorMapListener
 {
-    private $discrminatorMap;
+    private $discriminatorMap;
 
     /**
      * Constructor
@@ -19,11 +19,11 @@ class DiscriminatorMapListener
      */
     public function __construct($discriminatorMap)
     {
-        $this->discrminatorMap = $discriminatorMap;
+        $this->discriminatorMap = $discriminatorMap;
     }
 
     /**
-     * Sets the discrimantor map according to the config
+     * Sets the discriminator map according to the config
      *
      * @param LoadClassMetadataEventArgs $eventArgs
      */
@@ -35,8 +35,7 @@ class DiscriminatorMapListener
         if ($class === null) {
             $class = new \ReflectionClass($metadata->getName());
         }
-
-        foreach ($this->discrminatorMap as $table => $config) {
+        foreach ($this->discriminatorMap as $table => $config) {
             if ($class->getName() == $config['entity']) {
                 $reader = new AnnotationReader;
                 $discriminatorMap = array();
