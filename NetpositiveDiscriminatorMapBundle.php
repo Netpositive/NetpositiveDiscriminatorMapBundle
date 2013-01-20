@@ -18,7 +18,8 @@ class NetpositiveDiscriminatorMapBundle extends Bundle
      * (non-PHPdoc)
      * @see Symfony\Component\HttpKernel\Bundle.Bundle::boot()
      */
-    public function boot() {
+    public function boot()
+    {
         $em = $this->container->get('doctrine.orm.default_entity_manager');
         $discriminatorMapListener = $this->container->get('netpositive_discriminator_map');
 

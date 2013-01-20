@@ -14,7 +14,7 @@ class DiscriminatorMapListener
 
     /**
      * Constructor
-     * 
+     *
      * @param array $discriminatorMap
      */
     public function __construct($discriminatorMap)
@@ -24,7 +24,7 @@ class DiscriminatorMapListener
 
     /**
      * Sets the discriminator map according to the config
-     * 
+     *
      * @param LoadClassMetadataEventArgs $eventArgs
      */
     public function loadClassMetadata(LoadClassMetadataEventArgs $eventArgs)

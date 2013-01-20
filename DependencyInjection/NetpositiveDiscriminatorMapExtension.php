@@ -17,7 +17,7 @@ class NetpositiveDiscriminatorMapExtension extends Extension
 {
     /**
      * {@inheritDoc}
-     * 
+     *
      * @param array            $configs
      * @param ContainerBuilder $container
      */
