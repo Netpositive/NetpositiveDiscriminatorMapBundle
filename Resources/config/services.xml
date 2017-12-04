@@ -9,7 +9,7 @@
     </parameters>
 
     <services>
-        <service id="netpositive_discriminator_map" class="%netpositive_discriminator_map.class%">
+        <service id="netpositive_discriminator_map" class="%netpositive_discriminator_map.class%" public="true">
             <argument>%netpositive_discriminator_map.discriminator_map%</argument>
             <tag name="doctrine.event_listener" event="loadClassMetadata"/>
         </service>
